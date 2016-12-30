@@ -29,6 +29,7 @@ RUN curl -sSL https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hac
     && chmod a+x /usr/local/bin/dind
 
 COPY ./wrapper.sh /usr/local/bin/wrapper.sh
+COPY ./settings.xml /etc/maven/settings.xml
 RUN chmod a+x /usr/local/bin/wrapper.sh
 
 VOLUME /var/lib/docker
