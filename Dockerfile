@@ -19,7 +19,7 @@ RUN apt-get update -y       \
        unzip                \
        zip                  \
        vim                  \
-       maven                \
+       maven
        
 ENV DIND_COMMIT 3b5fac462d21ca164b3778647420016315289034
 # docker
