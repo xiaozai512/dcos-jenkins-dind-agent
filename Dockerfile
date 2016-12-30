@@ -17,8 +17,10 @@ RUN apt-get update -y       \
        lxc                  \
        openjdk-8-jdk-headless  \
        unzip                \
-       zip
-
+       zip                  \
+       vim                  \
+       maven                \
+       
 ENV DIND_COMMIT 3b5fac462d21ca164b3778647420016315289034
 # docker
 RUN curl -sSL https://get.docker.com | sh
